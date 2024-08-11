@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">IntentNotify</string>
+
+    <string name="header">
+        <u>Intent Notify Example</u>
+    </string>
+    <string name="disp_header">
+        <u>Intent Received</u>
+    </string>
+
+    <string name="message_input">Enter Message</string>
+    <string name="message_disp">Message Received</string>
+    <string name="msg_placeholder">Sample Data</string>
+    <string name="send_msg_btn">Send Msg via Intent</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_fragment">Option First Fragment</string>
+    <string name="second_fragment">Option Second Fragment</string>
+    <string name="menu_opt_1">Option1</string>
+    <string name="menu_opt_2">Option2</string>
+</resources>

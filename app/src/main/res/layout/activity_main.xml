@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activity_bg"
+        tools:context=".MainActivity">
+    <TextView
+            android:id="@+id/header"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/header"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/material_dynamic_primary50"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.05"/>
+
+    <EditText
+            android:id="@+id/messageET"
+            android:autofillHints=""
+            android:hint="@string/message_input"
+            android:inputType="text"
+
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/material_dynamic_primary40"
+
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    <Button
+            android:id="@+id/btnSend"
+
+            android:text="@string/send_msg_btn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/material_dynamic_primary90"
+
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            app:layout_constraintTop_toBottomOf="@id/messageET"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/frameLayout"
+
+            app:layout_constraintTop_toBottomOf="@id/btnSend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.fragment.app.FragmentContainerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
